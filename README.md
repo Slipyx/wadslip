@@ -21,14 +21,14 @@ license. See the included LICENSE.txt in src/iniparser for full information.
 
 ## Using
 All you really need to do is specify the Doom WAD file to dump in config.ini
-under the section 'Main'. Specifying a map name will attempt to look for the
-map in the WAD file and export a full 2D image of it to SVG and PNG. The
-settings under the 'MapDrawer' section are used to customize how the map is
-drawn. The drawThings setting will draw a green square where the player 1
-start is and colored squares where all the keys are. The countThings setting
-will tally up all the monsters and items that are on the map and dump the
-stats to dump.txt along with all the other WAD info. So far, only monsters
-and powerups are counted.
+under the section 'Main'. Wadslip will dump the info to stdout unless piped to
+a file. Specifying a map name will attempt to look for the map in the WAD file
+and export a full 2D image of it to SVG and PNG. The settings under the
+'MapDrawer' section are used to customize how the map is drawn. The drawThings
+setting will draw a green square where the player 1 start is and colored
+squares where all the keys are. The countThings setting will tally up all the
+monsters and items that are on the map and dump the stats along with all the
+other WAD info. So far, only monsters and powerups are counted.
 
 ## Dependencies
 wadslip depends on the following libraries:
